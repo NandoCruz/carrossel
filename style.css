@@ -21,6 +21,14 @@ body{
     background-image: linear-gradient(to bottom left, var(--bg-color), var(--bg-color1));
 }
 
+.slides{
+    gap: 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+}
+
 .container{
     width: 350px;
     height: 500px;
@@ -42,20 +50,7 @@ body{
 }
 
 .prev-text{
-    font-weight: 600;
     margin-left: 5px;
-}
-
-.card-container{
-    display: flex;
-}
-
-.slides{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 350px;
 }
 
 .title{
@@ -73,7 +68,6 @@ body{
 img{
     width: auto;
     height: 160px;
-    margin-top: 5px;
 }
 
 .footer{
@@ -91,7 +85,6 @@ img{
     border: none;
     cursor: pointer;
     border-radius: 999px;
-    margin-top: 20px;
 }
 
 .dot-box{
@@ -106,7 +99,7 @@ img{
     background-color: var(--bg-color3);
     border-radius: 50%;
     cursor: pointer;
-    transition: .6s ease;
+    transition: background-color .6s ease;
 }
 
 .active, .dot:hover{
@@ -114,7 +107,8 @@ img{
 }
 
 .fade{
-    animation: fade 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 @keyframes fade{
