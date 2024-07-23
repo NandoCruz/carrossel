@@ -53,17 +53,6 @@ body{
     margin-left: 5px;
 }
 
-<<<<<<< Updated upstream
-=======
-.slides{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 350px;
-}
-
->>>>>>> Stashed changes
 .title{
     font-size: 28px;
     width: 100%;
