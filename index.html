@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <title>Carrossel</title>
+</head>
+<body>
+    <div class="container">
+        <a class="prev" href="#" onclick="addSlides(-1)">
+            <span>&#10094</span>
+            <span class="prev-text">Voltar</span>
+        </a>
+        
+        <div class="card-container">
+            <div class="slides fade">
+                <img src="./imagens/slide1.png" alt="imagem natalina">
+                <h2 class="title">Luz e Alegria</h2>
+                <p class="content">O Natal representa esperança, pois Cristo nasceu para iluminar nossas vidas.<br/><br/><span><b>Fernando Cruz</b></span></p>
+            </div>
+
+            <div class="slides fade">
+                <img src="./imagens/slide2.png" alt="imagem natalina">
+                <h2 class="title">Amor e Bondade</h2>
+                <p class="content">Que o espírito de Natal aqueça não apenas nossas casas, mas também nossas almas.<br/><br/><span><b>Fernando Cruz</b></span></p>
+            </div>
+            
+            <div class="slides fade">
+                <img src="./imagens/slide3.png" alt="imagem natalina">
+                <h2 class="title">Feliz Natal</h2>
+                <p class="content">Desejo um Natal brilhante de alegria, solidariedade, união e muito amor!<br/><br/><span><b>Fernando Cruz</b></span></p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <button class="button" onclick="addSlides()">Próximo</button>
+
+            <div class="dot-box">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
